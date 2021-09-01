@@ -1,22 +1,20 @@
 #include "main.h"
 /**
- *jack_bauer - prints every minute of the day of Jack Bauer
- *
- *Return: Always 0.
+ * jack_bauer - prints a 24 hour timer in military
  */
 void jack_bauer(void)
 {
-  int h, m;
+  int i, j;
 
-  for (h = 0; h <= 23; h++)
+  for (i = 0; i < 24; i++)
     {
-      for (m = 0; m <= 59; m++)
+      for (j = 0; j < 60; j++)
 	{
-	  _putchar((h / 10) + '0');
-	  _putchar((h % 10) + '0');
+	  _putchar(i / 10 + 48);
+	  _putchar(i % 10 + 48);
 	  _putchar(':');
-	  _putchar((m / 10) + '0');
-	  _putchar((m % 10) + '0');
+	  _putchar(j / 10 + 48);
+	  _putchar(j % 10 + 48);
 	  _putchar('\n');
 	}
     }

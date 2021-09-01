@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- *add - Add teo integers
- *@x: int type number
- *@y: int type number
- *Return: result of addition
+ *add-adds to numbers i and j
+ *@i:number 1
+ *@j:bumber 2
+ *Return: returns i + j
  */
-int add(int x, int y)
+int add(int i, int j)
 {
-  return (x + y);
+  return (i + j);
 }
