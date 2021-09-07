@@ -1,14 +1,15 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * reset_to_98 - update value the pointer point to
- *
- * @n: pointer
- *
- * Return: Void
+ * swap_int - swaps the value of two integers
+ * @a: pointer a
+ * @b: pointer b
  */
-
-void reset_to_98(int *n)
+void swap_int(int *a, int *b)
 {
-  *n = 98;
+  int temp;
+
+  temp = *a;
+  *a = *b;
+  *b = temp;
 }
